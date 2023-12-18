@@ -1,23 +1,27 @@
-:root{
-    --dark-black : #1b1b1b;
-    --black : #222222;
-    --white : #fff;
+:root {
+    --dark-black: #1b1b1b;
+    --black: #222222;
+    --white: #fff;
 }
-.header{
+
+.header {
     height: 100vh;
     width: 100%;
     overflow: hidden;
 }
-.parallax-img-container{
+
+.parallax-img-container {
     height: 100vh;
     z-index: -1;
 }
-#parallax-img{
+
+#parallax-img {
     filter: blur(0.5px);
-        -webkit-filter: blur(5px);
+    -webkit-filter: blur(5px);
     height: 100vh;
 }
-.header-content{
+
+.header-content {
     position: absolute;
     top: 0;
     left: 0;
@@ -26,7 +30,8 @@
     z-index: 2;
     overflow: hidden;
 }
-.nameInfo{
+
+.nameInfo {
     width: 100%;
     height: 100%;
     display: flex;
@@ -35,20 +40,23 @@
     align-items: center;
     padding-bottom: 100px;
 }
-.z-top{
+
+.z-top {
     z-index: 2;
 }
-.overlay{
+
+.overlay {
     position: absolute;
-    top:0;
-    left:0;
-    width:100%;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
-    
-    /* background: linear-gradient(rgba(9, 9, 51, 0.8),rgba(7, 24, 41, 0.8)); */
-    z-index: 0; 
+
+    background: linear-gradient(rgba(9, 9, 51, 0.8), rgba(7, 24, 41, 0.8));
+    z-index: 0;
 }
-.custom-nav{
+
+.custom-nav {
     background: rgba(0, 6, 12, 0.4);
     padding: 0px 0px;
     font-size: 2rem;
@@ -57,26 +65,32 @@
     align-items: center;
     z-index: 3;
 }
+
 .services {
     display: flex;
     align-items: center;
 }
-.custom-nav a i{
+
+.custom-nav a i {
     padding: 12px;
     color: var(--white);
 }
-.custom-nav a i:hover{
+
+.custom-nav a i:hover {
     color: rgb(168, 167, 252);
     transform: scale(1.3);
 }
-.social{
+
+.social {
     position: relative;
     z-index: 4;
 }
-.icon-area i{
+
+.icon-area i {
     font-size: 2.5rem;
 }
-.quote{
+
+.quote {
     padding: 150px 150px;
     background: url(../images/bg2.webp);
     background-position: center;
@@ -86,28 +100,32 @@
     font-size: 36px;
 }
 
-.contact{
+.contact {
     display: block;
     padding: 5% 12%;
     background: url(../images/bg2.webp);
     background-attachment: fixed;
     background-size: cover;
 }
-.contact i{
+
+.contact i {
     font-size: 1.3rem;
 }
-.card-deck .card{
+
+.card-deck .card {
     min-width: 25%;
 }
 
-@media screen and (max-width: 768px){
-    .contact-descriptions{
+@media screen and (max-width: 768px) {
+    .contact-descriptions {
         text-align: center;
     }
-    .contact{
-        padding:5% 5%;
+
+    .contact {
+        padding: 5% 5%;
     }
-    .quote{
+
+    .quote {
         padding: 40px 40px;
     }
 }
